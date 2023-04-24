@@ -1,0 +1,22 @@
+.image-call-to-action {
+    @apply flex flex-col items-center;
+}
+
+.image-call-to-action i, .image-cta-image {
+    @apply h-[92px] w-auto mb-8;
+}
+
+.image-cta-heading {
+    @apply heading-5 mb-10 last:mb-[50px] md:mb-[96px] md:last:mb-[96px] text-center;
+}
+
+.image-cta-number {
+    @apply bg-secondary flex items-center justify-center;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.image-cta-number span {
+    @apply text-3xl text-white;
+}

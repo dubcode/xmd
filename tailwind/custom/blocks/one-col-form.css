@@ -1,0 +1,11 @@
+.one-col-container .html-wrap {
+    @apply !text-base text-grey-700;
+}
+
+.one-col-container .checkbox-wrap .nf-field-label {
+    @apply !text-base text-grey-700 flex justify-center;
+}
+
+.one-col-block .submit-icon {
+    @apply hidden;
+}

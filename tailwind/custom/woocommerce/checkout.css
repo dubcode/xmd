@@ -1,0 +1,227 @@
+.emc-checkout-wrapper {
+    @apply bg-grey-700 relative;
+}
+
+.emc-checkout-wrapper .woocommerce-checkout {
+    @apply container;
+}
+
+.emc-checkout-wrapper #breadcrumbs {
+    @apply text-white !mt-0;
+}
+
+.emc-checkout-wrapper #breadcrumbs span span a {
+    @apply mr-3;
+}
+
+.emc-checkout-wrapper #breadcrumbs span span span {
+    @apply ml-3;
+}
+
+.emc-checkout-wrapper .checkout-title {
+    @apply heading-2 mt-8 mb-10 text-white;
+}
+
+.emc-checkout-grid {
+    @apply grid grid-cols-12 gap-28 container pt-[180px];
+}
+
+.checkout-form-container {
+    @apply col-span-7;
+}
+
+.checkout-form-container .emc-tab-item {
+    @apply h-[70px];
+}
+
+.checkout-form-container .emc-tab-link.active {
+    @apply bg-white;
+}
+
+.checkout-form-container .emc-tab-link {
+    @apply bg-[#a2a8b1];
+}
+
+.checkout-form-container .emc-tab-content {
+    @apply bg-white p-10;
+}
+
+.checkout-order-summary {
+    @apply col-span-5;
+}
+
+.checkout-details-heading, .checkout-payment-details-heading, .checkout-shipping-details-heading {
+    @apply heading-5 text-white mb-8 flex;
+}
+
+.checkout-payment-details-heading {
+    @apply mt-8;
+}
+
+.checkout-steps-number {
+    @apply text-white bg-grey rounded-[50%] h-[29px] w-10 flex justify-center items-center mr-5;
+}
+
+.emc-checkout-grid .emc-sidebar-header {
+    @apply mb-0;
+}
+
+.checkout-payment-section {
+    @apply p-10 bg-white mb-[96px];
+}
+
+.sidebar-products {
+    @apply px-8 bg-white;
+}
+
+.checkout-sidebar-product-item {
+    @apply flex pb-8 border-b border-grey-400;
+}
+
+.checkout-sidebar-product-image img {
+    @apply w-[87px] h-[87px] mr-5;
+}
+
+.checkout-sidebar-product-info {
+    @apply flex flex-col;
+}
+
+.sidebar-product-name {
+    @apply mb-3 text-[21px] text-grey;
+}
+
+.sidebar-product-price {
+    @apply mb-3 text-base font-bold;
+}
+
+.checkout-sidebar-product-info .cart-product-variation {
+    @apply text-[12px] text-grey;
+}
+
+.checkout-product-sidebar-totals {
+    @apply mt-3 pt-6 pb-8 px-8 bg-white;
+}
+
+.cost-totals-heading {
+    @apply heading-5 mb-8;
+}
+
+.emc-shipping-method {
+    @apply flex justify-between;
+}
+
+.shipping_method-item {
+    @apply mb-3 last:mb-0;
+}
+
+.shipping_method {
+    @apply mr-3;
+}
+
+.shipping-label {
+    @apply text-sm;
+}
+
+.woocommerce table.shop_table td, .woocommerce table.shop_table th {
+    @apply p-0;
+}
+
+.chosen-delivery-method {
+    @apply flex justify-between;
+}
+
+.woocommerce table.shop_table tfoot th, .woocommerce table.shop_table tfoot td {
+    @apply text-[21px] border-0;
+}
+
+.td-right {
+    @apply text-right;
+}
+
+.shipping-method-price {
+    @apply text-base text-right;
+}
+
+.cart-subtotal th, .cart-subtotal td {
+    @apply !pb-5;
+}
+
+.cart-delivery-method th, .cart-delivery-method td {
+    @apply !pb-3;
+}
+
+.woocommerce-shipping-totals.shipping td {
+    @apply !pb-5;
+}
+
+.woocommerce table.shop_table {
+    @apply border-0;
+}
+
+.logged-in-details, .checkout-shipping-details {
+    @apply bg-white p-10;
+}
+
+#place_order {
+    @apply w-full;
+}
+
+.woocommerce-billing-fields__field-wrapper input, .woocommerce-shipping-fields__field-wrapper input {
+    @apply border border-grey-300;
+}
+
+.optional {
+    @apply hidden;
+}
+
+.billing-address-lookup, .shipping-address-lookup {
+    @apply relative;
+}
+
+.geoapify-autocomplete-input {
+    @apply w-full px-[0.75rem] h-[3.5rem];
+}
+
+.geoapify-autocomplete-items {
+    @apply pt-5;
+}
+
+.geoapify-autocomplete-item {
+    @apply flex mb-[15px];
+}
+
+.geoapify-autocomplete-item .icon {
+    @apply mr-3;
+}
+
+.geoapify-close-button {
+    @apply hidden;
+}
+
+.manual-billing-address-entry, .manual-billing-address-cancel, .manual-shipping-address-entry, .manual-shipping-address-cancel {
+    @apply underline;
+}
+
+.manual-billing-address-cancel, .manual-shipping-address-cancel {
+    @apply hidden;
+}
+
+.checkout-usps {
+    @apply flex mt-8;
+}
+  
+.checkout-usp {
+    @apply flex mr-10 last:mr-0 text-base uppercase text-white w-6/12 items-center justify-center;
+}
+  
+.checkout-usps .checkout-usp-image, .checkout-usps i {
+    @apply mr-5;
+}
+
+.checkout-shipping-section {
+    @apply mb-[96px]
+}
+
+.woocommerce-checkout-review-order .woocommerce form .form-row {
+    @apply !p-0;
+}

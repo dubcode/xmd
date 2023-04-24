@@ -1,0 +1,27 @@
+.emc-modal {
+    @apply fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto
+}
+
+.emc-modal-container {
+    @apply  relative w-auto pointer-events-none h-full flex items-center;
+}
+
+.emc-modal-content {
+    @apply border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding outline-none text-current;
+}
+
+.emc-modal-header {
+    @apply flex flex-shrink-0 items-center justify-between p-4;
+}
+
+.emc-modal-button {
+    @apply box-content w-4 h-4 p-1 text-primary border-none opacity-60 focus:shadow-none focus:outline-none focus:opacity-100 hover:opacity-100 hover:no-underline;
+}
+
+.emc-modal-body {
+    @apply relative p-4;
+}
+
+.emc-modal-body iframe {
+    @apply w-full;
+}

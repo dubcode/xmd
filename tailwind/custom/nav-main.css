@@ -1,0 +1,158 @@
+.mega-menus {
+    @apply z-50 absolute w-full top-[125px];
+}
+
+.hoverable {
+    @apply text-grey-900 md:text-white text-[21px] last-of-type:mr-0;
+}
+
+.hoverable > a {
+    @apply ml:pr-5 lg:pr-12
+}
+
+.show-button {
+    @apply mt-6;
+}
+
+.mega-menu-item {
+    @apply  relative block text-base leading-[70px] lg:leading-[100px];
+}
+/*
+.mega-menu-item.first-level {
+    @apply leading-[140px];
+}
+*/
+
+.emc-menu-button {
+    @apply last-of-type:leading-[34px];
+}
+
+.style-one-container {
+    @apply w-full;
+}
+
+.style-one-ul {
+    @apply container grid md:grid-cols-3 lg:grid-cols-3 gap-5 pb-6 pt-6 lg:pt-3;
+}
+
+.style-one-bg {
+    @apply mb-5;
+}
+
+.style-one-title-container {
+    @apply flex items-center text-inherit;
+}
+
+
+.style-one-title-icon {
+    @apply bg-secondary flex items-center justify-center;
+    border-radius: 100%;
+    margin: 0 7px 0 0;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.style-one-title-icon svg {
+    height: auto;
+    width: 10px;
+}
+
+.style-one-title-icon svg path {
+    @apply fill-primary;
+}
+
+.style-two-container {
+    @apply w-full;
+}
+
+.style-two-container-inner {
+    @apply container grid md:grid-cols-3 lg:grid-cols-4 gap-5 pb-6 pt-6 lg:pt-3
+}
+
+.style-two-heading-container {
+    @apply items-center;
+}
+
+.style-two-heading {
+    @apply font-bold text-xl text-white mb-5;
+}
+
+.style-two-li {
+    @apply text-grey-400 text-base mr-[60px] last-of-type:mr-0 mb-3;
+}
+
+.style-two-li a {
+    @apply block leading-8 text-base;
+}
+
+.style-three-container {
+    @apply w-full;
+}
+
+.style-three-container-inner {
+    @apply container grid lg:grid-cols-4 gap-5 pb-6 pt-6 lg:pt-3;
+}
+
+.style-three-col {
+    @apply col-span-3;
+}
+
+.style-three-header-container {
+    @apply items-center;
+}
+
+.style-three-header {
+    @apply font-bold text-xl md:text-white mb-2;
+}
+
+.style-three-container .menu-item ul {
+    @apply grid md:grid-cols-3;
+}
+
+.style-three-list-item {
+    @apply mb-3;
+}
+
+.style-three-list-item a {
+    @apply leading-8 text-base text-grey-400;
+}
+
+.style-three-cta {
+    @apply relative bg-grey-700;
+}
+
+.style-three-cta .cta {
+    @apply relative text-center pt-16 pb-20 flex items-center justify-center flex-col;
+}
+
+.style-three-cta .cta .cta-content {
+    @apply flex-1 z-50;
+}
+
+.style-three-cta .cta .cta-text {
+    @apply heading-2 text-white mb-[30px];
+}
+
+.style-three-cta .cta .cta-button {
+    @apply button-primary button-col-secondary;
+}
+
+.style-four-container {
+    @apply w-full;
+}
+
+.style-four-ul {
+    @apply container grid lg:grid-cols-1 gap-0
+}
+
+.style-four-item {
+    @apply w-full pl-[22px] first-of-type:pt-5 last-of-type:pb-[30px];
+}
+
+.style-four-li {
+    @apply text-grey-400 text-base mr-10 last-of-type:mr-0 mb-3;
+}
+
+.style-four-li a {
+    @apply block leading-8 text-base;
+}

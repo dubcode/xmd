@@ -1,0 +1,100 @@
+.floating-basket-container {
+    @apply container relative col-span-12;
+}
+
+.basket-floating-widget {
+    @apply hidden md:flex w-[388px] min-h-[450px] flex-col absolute z-50 right-0 top-0 bg-grey-200;
+}
+
+.floating-basket-icon-close {
+    @apply cursor-pointer;
+}
+
+.floating-basket-header {
+    @apply px-[30px] flex items-center justify-between mt-[22px] text-grey;
+}
+
+.floating-basket-header h5 {
+    @apply heading-5;
+}
+
+.floating-empty-cart-message {
+    @apply w-full flex flex-col items-center justify-center;
+}
+
+.floating-basket-cart-empty-button {
+    @apply button-primary button-col-primary mt-8;
+}
+
+.floating-basket-content {
+    @apply px-5 pt-8 text-grey-700;
+}
+
+.floating-basket-product {
+    @apply flex pb-8 last:border-b border-grey-400 text-lg;
+}
+
+.floating-product-details {
+    @apply text-left ml-3 mr-6;
+}
+
+.floating-product-name {
+    @apply mb-2.5;
+}
+
+.floating-product-price {
+    @apply font-bold mb-2.5;
+}
+
+.floating-product-variations {
+    @apply uppercase;
+}
+
+.floating-product-variations .cart-product-variation {
+    @apply text-grey-700 text-sm ml-[13.5px] first:ml-0;
+}
+
+.floating-product-image {
+    @apply w-[77px] h-[77px];
+}
+
+.floating-subtotal {
+    @apply flex justify-between text-[21px] text-grey-700 mb-5 mt-[30px] mx-[30px];
+}
+
+.floating-subtotal-cost {
+    @apply font-bold;
+}
+
+.floating-wc-buttons {
+    @apply flex px-5;
+}
+
+.floating-basket-bag-button, .floating-basket-checkout-button {
+    @apply w-6/12;
+}
+
+.floating-basket-bag-button {
+    @apply button-primary button-col-tertiary mr-2;
+}
+
+.floating-basket-checkout-button {
+    @apply button-primary button-col-primary;
+}
+
+.floating-payment-info {
+    @apply flex flex-col justify-center items-center;
+}
+
+.floating-payment-accept-text {
+    @apply text-base uppercase text-grey-700 mt-[30px] mb-5 font-bold text-center;
+}
+
+.floating-payment-accept-icons {
+    @apply flex justify-center mb-[22px] items-center;
+}
+
+.floating-payment-icon {
+    @apply mr-[14px] last:mr-0;
+}
+

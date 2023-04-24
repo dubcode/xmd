@@ -1,0 +1,43 @@
+.one-col-block .accordion {
+    @apply block pb-0;
+}
+
+.one-col-block .accordion-item {
+    @apply bg-transparent border-b border-grey-400 mb-5 last:mb-0;
+}
+
+.one-col-block .accordion-header {
+    @apply h-[51px] px-5;
+}
+
+.one-col-block .accordion-button {
+    @apply text-primary h-full;
+}
+
+.one-col-block.column-bg .accordion-button {
+    @apply bg-grey-200 !text-grey h-full;
+}
+
+.one-col-block .accordion-text {
+    @apply bg-transparent text-grey text-left;
+}
+
+.one-col-block .accordion-button:not(.collapsed) {
+    @apply text-primary bg-transparent;
+}
+
+.one-col-block .accordion-body {
+    @apply text-grey-700 my-5;
+}
+
+.questions .block-header {
+    @apply text-primary font-medium text-4xl;
+}
+
+.questions .accordion-text{
+    @apply bg-primary text-white rounded p-4;
+}
+
+.questions .accordion-text p{
+    @apply text-white;
+}

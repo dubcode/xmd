@@ -1,0 +1,60 @@
+.one-col-block {
+    @apply bg-cover bg-no-repeat;
+}
+
+
+.one-col-block .slider-title {
+    @apply heading-4 mb-8 text-inherit;
+}
+
+.one-col-block .slider-text {
+    @apply mb-8 w-full md:max-w-[800px] text-lg;
+}
+
+.one-col-block .author {
+    @apply mb-6 text-base;
+}
+
+.one-col-block .slick-dots {
+    @apply bottom-[20px] md:bottom-[45px];
+}
+
+.one-col-block .slick-slider .slick-dots li.slick-active button {
+    background: #fff;
+}
+
+.one-col-block .slick-dotted.slick-slider {
+    @apply !mb-0;
+}
+
+.testimonial-image img {
+    @apply w-16 h-16;
+}
+
+.testimonial-logo img {
+    @apply w-auto h-16 mb-8;
+}
+
+.testimonials-slider.slick-slider.slick-dotted .slick-list {
+    @apply mb-0
+}
+
+.featured-testimonials::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(./assets/img/ingot-shape-flipped-white.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0 top;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.featured-testimonials .slider-title {
+    @apply font-medium text-4xl text-white text-center;
+}

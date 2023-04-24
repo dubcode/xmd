@@ -1,0 +1,182 @@
+.two-col-container {
+    @apply h-full;
+}
+
+.two-col-block.big-excerpt {
+    @apply mb-4;
+}
+
+.two-col-column-1 {
+    @apply w-full h-[368px] md:h-auto md:min-h-[50%];
+}
+
+.two-col-column-2 {
+    @apply flex flex-col justify-center min-h-[368px] md:min-h-[570px] px-[30px] min-[840px]:px-0 py-10 min-[840px]:py-0;
+}
+
+.two-col-image {
+    @apply w-full h-full;
+}
+
+.two-col-grid {
+    @apply grid grid-cols-1 md:grid-cols-2;
+}
+
+.two-col-grid-block {
+    @apply min-h-[285px] flex flex-col justify-center items-center;
+}
+
+.two-col-grid-block-header {
+    @apply mb-5 heading-5 text-white;
+}
+
+.two-col-grid-block-text {
+    @apply mx-10 text-grey-400;
+}
+
+.two-col-block .written ul {
+    @apply list-none p-0 m-0 md:columns-2 md:gap-x-8 md:pr-8;
+}
+
+.two-col-block .written ul li {
+    @apply w-full box-border;
+    list-style-image: none;
+    padding: 5px 0 5px 30px; /* Add some padding between list items and make room for the image bullet */
+    background-image: url('./assets/img/check-icon.svg'); /* Replace with the path to your image bullet */
+    background-repeat: no-repeat;
+    background-position: 0 center; /* Position the image bullet to the left and centered vertically */
+    background-size: 20px; /* Adjust the size of the image bullet */
+}
+
+#tabs-content .two-col-block .written ul {
+    columns: auto;
+}
+
+#tabs-content .two-col-block .written ul li {
+    @apply border border-secondary border-t-0 border-l-0 border-r-0 w-full box-border;
+    list-style-image: none;
+    padding: 5px 0 5px 0; /* Add some padding between list items and make room for the image bullet */
+    background: none;
+    columns: none;
+}
+
+.two-col-block .two-col-heading {
+    @apply font-medium text-4xl;
+}
+
+.two-col-block a.button-col-primary {
+    @apply bg-transparent border-2 border-solid border-primary rounded normal-case font-bold text-primary text-base mb-5 py-3 px-9 hover:border-secondary hover:bg-secondary hover:text-white transition-all duration-300;
+    letter-spacing: 1px;
+}
+
+.two-col-block.bg-primary a.button-col-primary {
+    @apply bg-transparent border-2 border-solid border-white rounded normal-case font-bold text-white text-base mb-5 py-3 px-9 hover:border-secondary hover:bg-secondary hover:text-white transition-all duration-300;
+    letter-spacing: 1px;
+}
+
+.third-grid {
+    @apply order-2 md:order-1;
+}
+
+.fourth-grid {
+    @apply order-1 md:order-2;
+}
+
+.dark-grid-bg {
+    @apply bg-grey;
+}
+
+.light-grid-bg {
+    @apply bg-grey-700;
+}
+
+.two-col-padding-left {
+    @apply md:mr-[14%] md:pl-[16%];
+}
+
+.two-col-padding-right {
+    @apply md:ml-[14%] md:pr-[16%];
+}
+
+.two-col-order-2 {
+  @apply order-1 md:order-2;
+}
+
+.two-col-order-1 {
+    @apply order-1;
+}
+
+.two-col-heading {
+    @apply heading-2 mb-5 md:mb-8;
+}
+
+.two-col-text {
+    @apply text-lg text-grey-700 mb-8;
+}
+
+.two-col-logo {
+    @apply w-3/6 h-auto mb-8;
+}
+
+.two-col-button {
+    @apply button-primary button-col-primary;
+}
+
+.two-col-button-one {
+    @apply button-primary button-col-primary bg-purple rounded-full border-2 border-purple normal-case mb-4 xl:mr-4 xl:mb-0 hover:bg-transparent hover:text-purple;
+}
+
+.two-col-button-two {
+    @apply text-purple button-primary button-col-primary bg-transparent rounded-full border-2 border-purple normal-case hover:text-purple;
+}
+
+.two-col-button-one:hover ~ .two-col-button-two {
+    @apply bg-purple text-white; 
+}
+
+.two-col-block .video-play-container {
+    @apply absolute z-20;
+}
+
+/* Two column Slick Slider styles */
+
+.two-col-block .slick-dotted.slick-slider {
+    @apply mb-0;
+}
+
+.two-col-block .slick-dotted.slick-slider .slick-list {
+    @apply mb-0
+}
+
+.two-col-slider .slick-dots li.slick-active button {
+    @apply !bg-white;
+}
+
+.two-col-slider .slick-dots {
+    @apply bottom-[50px];
+}
+
+.two-col-slider-image {
+    @apply h-[368px] md:h-[570px] w-full;
+}
+
+.two-col-video {
+    @apply object-fill h-[368px] md:h-[570px] w-full;
+}
+
+.two-col-video-container {
+    @apply z-0 flex items-center justify-center h-full relative;
+}
+
+.two-col-video-container .gradient-overlay {
+    @apply z-10 w-full h-full absolute;
+}
+
+.two-columns-plain .custom-call-to-action {
+    @apply bg-white;
+    min-height: auto;
+}
+
+.two-columns-plain .custom-call-to-action .cta-text {
+    @apply mt-0 text-grey-700;
+}

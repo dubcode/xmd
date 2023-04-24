@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>check-icon@2x</title>
+    <g id="------Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile---iPhone-8---Template-Page" transform="translate(-30.000000, -2394.000000)" fill="#2EA3F2" fill-rule="nonzero">
+            <g id="2-column" transform="translate(0.000000, 1743.000000)">
+                <g id="Text" transform="translate(0.000000, 300.000000)">
+                    <g id="Bullet-List" transform="translate(30.000000, 210.000000)">
+                        <path d="M14.2934319,141.119768 L5.08872669,150.084713 L1.70660231,146.790685 C1.54260664,146.630961 1.27674162,146.630961 1.11271178,146.790685 L0.122996748,147.75462 C-0.0409989161,147.914344 -0.0409989161,148.173284 0.122996748,148.333041 L4.79179851,152.880232 C4.95576,153.039923 5.22162503,153.039923 5.38565486,152.880232 L15.8770033,142.662124 C16.0409989,142.502434 16.0409989,142.243461 15.8770033,142.083737 L14.8872882,141.119768 C14.7232926,140.960077 14.4574275,140.960077 14.2934319,141.119768 Z" id="check-icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

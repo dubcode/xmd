@@ -1,0 +1,149 @@
+.debugger {
+	@apply absolute left-1/2 top-0;
+}
+
+.emc-push-menu {
+	@apply absolute top-0 z-10;
+	transition: transform 0.3s;
+	transform: translateX(-100%);
+}
+
+.emc-push-menu.show-menu {
+	@apply transform-none;
+}
+
+.header-nav-toggle, .header-nav-toggle-open {
+	@apply w-full h-full;
+}
+
+.nav-wrapper {
+	@apply relative w-screen h-screen overflow-auto;
+}
+
+.mobile-menu-container {
+	@apply flex ml:hidden items-center cursor-pointer;
+}
+
+.menu-text {
+	@apply text-lg mr-2.5 text-grey-100 pl-2.5;
+}
+
+.js-nav-toggle {
+	@apply bg-secondary relative w-[30px] h-[30px] z-[2] flex items-center justify-center;
+	border-radius: 100%;
+}
+
+.js-nav-toggle img {
+	@apply w-[15.75px] h-[12.52px];
+}
+
+ .js-nav-toggle span {
+	@apply relative bg-grey h-0.5 block w-[22px] mt-[17px] mx-auto mb-0 transition-all duration-[400ms] delay-300;
+}
+ .js-nav-toggle span:before, .js-nav-toggle span:after {
+	@apply absolute block w-5 h-0 left-[1px] top-1/2 -mt-[7px] transition-all duration-300 delay-300;
+}
+ .js-nav-toggle span:before {
+	@apply shadow-[0_14px_0px_1px_rgba(51,68,85,1)];
+}
+ .js-nav-toggle span:after {
+	@apply shadow-[0_0_0_1px_rgba(51,68,85,1)];
+}
+ .show-menu .js-nav-toggle span {
+	@apply bg-transparent;
+}
+ .show-menu .js-nav-toggle span:before {
+	@apply -rotate-45;
+}
+ .show-menu .js-nav-toggle span:after {
+	@apply rotate-45;
+}
+.show-menu .js-nav-toggle span:before, .show-menu .js-nav-toggle span:not(.menu-next):after {
+	@apply mt-0 shadow-[0_0_0_1px_rgba(51,68,85,1)];
+}
+
+.emc-push-menu nav {
+	@apply absolute left-0 top-0 h-full w-full overflow-x-hidden overflow-y-auto shadow-[0_0_5px_1px_rgba(221,221,221,1)] bg-white;
+}
+
+.emc-push-menu nav .nav-toggle {
+	@apply cursor-pointer flex items-center container mb-8 mt-8;
+}
+
+.emc-push-menu nav .nav-back {
+	@apply inline-block relative text-lg text-grey-700 ml-2.5;
+	color: #fff;
+}
+.emc-push-menu nav .nav-list-item {
+	@apply h-[22px] flex items-center mb-5;
+}
+
+.emc-push-menu nav .nav-list-item:first-of-type {
+	@apply mt-5;
+}
+
+.emc-push-menu nav .nav-list-item:last-of-type {
+	@apply mb-0;
+}
+
+.emc-push-menu nav .submenu-list-item {
+	@apply h-auto flex items-center container pb-5;
+}
+
+.emc-push-menu nav li.has-dropdown {
+	@apply cursor-pointer;
+}
+
+.emc-push-menu nav a {
+	@apply block relative w-full text-lg border-0 text-grey-700 no-underline transition-colors duration-150;
+	color: #fff;
+	line-height: 2.4;
+}
+
+.emc-push-menu nav ul.mobile-nav-container {
+	@apply list-none p-0 absolute left-0 top-0 w-full bg-primary;
+	height:calc(100% - 85px);
+	transition: transform 0.3s;
+}
+
+.mobile-nav-title {
+	@apply text-left;
+}
+
+.arrow-icon {
+	@apply w-[9px] h-[16px];
+}
+
+.emc-push-menu nav ul.submenu-container {
+	@apply list-none p-0 absolute top-0 h-full w-full bg-primary bg-clip-content ;
+	transition: transform 0.3s;
+}
+
+.emc-push-menu nav ul ul {
+	@apply hidden left-full;
+}
+
+.emc-push-menu nav li.has-dropdown > a {
+	@apply pr-[2.5em] whitespace-nowrap overflow-ellipsis overflow-hidden;
+}
+.emc-push-menu nav li.has-dropdown > a:after {
+	@apply content-none absolute top-1/2 right-[1em] w-[9px] h-[9px] border-[1px] border-current border-l-transparent border-t-transparent;
+	transform: translateY(-90%) rotateZ(-45deg);
+	transition: transform 0.3s;
+	transform-origin: 100%;
+}
+.emc-push-menu nav li.nav-dropdown-open ul {
+	@apply block;
+}
+
+.noscroll {
+    @apply overflow-hidden;
+}
+
+.mobile-menu-footer {
+	@apply absolute bottom-[30px] container h-[55px] w-full flex items-center text-lg z-[11];
+}
+
+.mobile-menu-footer a {
+	@apply mb-2.5;
+}

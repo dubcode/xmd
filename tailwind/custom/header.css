@@ -1,0 +1,203 @@
+/**
+ * Styles for the site header
+ */
+
+@layer base {
+
+    #top-nav {
+        @apply relative z-10 h-[54px] flex items-center bg-primary-dark;
+    }
+
+    .container.top-nav-search {
+        @apply pl-0 xl:pl-8;
+    }
+
+    .desktop-top-search {
+        @apply hidden md:flex items-center justify-center w-full lg:w-[494px];
+    }
+
+    .search-form {
+        @apply m-0 w-full;
+    }
+
+    .search-form-input-container {
+        @apply relative text-white;
+    }
+
+    .search-form-icon {
+        @apply absolute inset-y-0 left-0 flex items-center pl-2;
+    }
+
+    .search-form-icon-button {
+        @apply p-1 pt-0 focus:outline-none focus:shadow-inner text-white
+    }
+
+    .mobile-top-search {
+        @apply flex md:hidden text-white;
+    }
+
+    .mobile-top-search span {
+        @apply ml-2.5;
+    }
+
+    .search-toggle {
+        @apply w-[18px] h-[18px] flex;
+    }
+
+    .search-toggle-container {
+        @apply cursor-pointer flex;
+    }
+
+    .search-icon, .search-icon-open {
+        @apply w-full h-full;
+    }
+
+    .mobile-search-container {
+        @apply absolute -bottom-[54px] w-screen z-10 -ml-[30px] -mr-[30px] sm:mr-0 sm:ml-0;
+    }
+
+    .search-input {
+        @apply py-2 text-lg text-grey-400 rounded-md pl-[46px] w-full h-[54px] focus:outline-none bg-[#262527];
+    }
+
+    .mobile-search-container .search-input {
+        @apply w-full pl-[30px] sm:pl-[46px];
+    }
+
+    .style-one-banner-logo {
+        @apply col-start-1 col-end-12 ml:col-end-3 lg:col-end-3 pl-0;
+    }
+
+    .style-two-banner-logo {
+        @apply col-span-12 grid ml:hidden;
+    }
+
+    .site-logo {
+        width: auto;
+        height: 100%;
+        max-height: 60px;
+    }
+
+    .top-footer .site-logo {
+        max-height: none;
+        @apply h-auto w-2/3;
+    }
+
+    .banner-nav {
+        @apply hidden ml:flex;
+    }
+
+    .banner-nav.style-one {
+        @apply col-start-3 col-end-12;
+    }
+
+    .banner-nav.style-two {
+        @apply col-span-12;
+    }
+
+    .banner-nav nav {
+        @apply text-grey-400 w-full;
+    }
+
+    .banner-nav-inner {
+        @apply lg:flex justify-end items-center;
+    }
+
+    .mega-menu-nav {
+        @apply hidden ml:flex;
+    }
+
+    .banner-nav.style-two .mega-menu-nav {
+        @apply w-full flex justify-between items-center;
+    }
+
+    .menu-first-half, .menu-second-half {
+        @apply flex;
+    }
+
+    .menu-first-half li {
+        @apply first:mr-[81px];
+    }
+
+    .menu-second-half li {
+        @apply first:mr-[91px];
+    }
+
+
+    .embed-container { 
+        @apply relative pb-[56.25%] overflow-hidden max-w-full h-auto;
+    } 
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed { 
+        @apply absolute top-0 left-0 w-full h-full;
+    }
+
+    .quick-links-container {
+        @apply justify-end mr-0 md:mr-5 lg:mr-0;
+    }
+
+    .quick-links-contact {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .social-links {
+        @apply h-[54px] w-auto items-center hidden md:flex;
+    }
+
+    .social-links ul {
+        @apply flex text-white;
+    }
+
+    .social-icon {
+        @apply mr-5 last:border-r last:mr-0 last:pr-5 border-r-white;
+    }
+
+    .social-icon i, .login-icon i {
+        @apply w-[18px] h-[18px];
+    }
+
+    .login-icon, .basket-icon {
+        @apply text-grey-400 flex items-center text-lg;
+    }
+
+    .login-icon {
+        @apply ml-5 hidden ml:flex text-white;
+    }
+
+    .login-icon i {
+        @apply text-white;
+    }
+
+    .login-text {
+        @apply ml-2.5 hidden ml:block text-grey-400;
+    }
+
+    .basket-icon {
+        @apply ml-[10px] ml:ml-[30px] pr-2.5 ml:pr-0;
+    }
+
+    .basket-icon i {
+        @apply w-[23px] h-[18px] text-white;
+    }
+
+    .basket-text {
+        @apply hidden ml:block ml-2.5 text-grey-400;
+    }
+
+    .basket-icon-count {
+        @apply ml-2.5 text-grey-400;
+    }
+
+    .main-nav-cta {
+        @apply flex items-center;
+    }
+
+    .main-nav-cta-button {
+        background-color: rgba(255, 255, 255, 0.1);
+        @apply border border-solid border-white rounded normal-case text-white py-1 px-3 hover:border-secondary hover:bg-secondary hover:text-white transition-all duration-300;
+        letter-spacing: 1px;
+    }
+
+}

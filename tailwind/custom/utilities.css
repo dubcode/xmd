@@ -1,0 +1,23 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `utilities` layer
+ *
+ * Add your own utility classes to this theme. Complex utility classes should
+ * be added using Tailwind’s plugin system:
+ *
+ * https://tailwindcss.com/docs/plugins#adding-utilities
+ */
+ @layer utilities {
+    .gradient-overlay {
+        @apply bg-grey-700 bg-gradient-to-t from-grey;
+        /* background-image: linear-gradient(180deg, grey 0%, rgba( 5,13,0,0.75) 100%); */
+    }
+
+    .slider-gradient {
+        @apply bg-grey-900 bg-gradient-to-t from-grey;
+        /* background-image: linear-gradient(180deg, grey 0%, rgba( 5,13,0,0.75) 100%); */
+    }
+
+    .menu-item-transition {
+        @apply block transform transition-transform hover:translate-x-1
+    }
+ }

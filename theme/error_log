@@ -1,0 +1,8 @@
+[14-Feb-2023 11:50:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/caladrius/public_html/wp-content/themes/extramile-theme-2023/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/caladrius/public_html/wp-content/themes/extramile-theme-2023/index.php on line 15
+[04-Mar-2023 19:29:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/caladrius/public_html/wp-content/themes/extramile-theme-2023/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/caladrius/public_html/wp-content/themes/extramile-theme-2023/index.php on line 15

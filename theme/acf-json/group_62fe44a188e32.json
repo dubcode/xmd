@@ -1,0 +1,126 @@
+{
+    "key": "group_62fe44a188e32",
+    "title": "Block : Tabs V2",
+    "fields": [
+        {
+            "key": "field_63c7246998503",
+            "label": "Enable Full Screen",
+            "name": "enable_full_screen",
+            "type": "true_false",
+            "instructions": "Removes max-width container from the block",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_63c724e28ecde",
+            "label": "Clone Block Header",
+            "name": "clone_block_header",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_63bc36d9dda3b"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_62ff3bae26d0d",
+            "label": "Tab Repeater",
+            "name": "tab_repeater",
+            "type": "repeater",
+            "instructions": "Enter the titles for the tabs by clicking Add Tab Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 7,
+            "collapsed": "",
+            "button_label": "Add Tab Title",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_62ff3c1126d10",
+                    "label": "Tab Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "aria-label": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_62ff3bae26d0d"
+                }
+            ]
+        },
+        {
+            "key": "field_63c720cb2ae3a",
+            "label": "Tab Tips",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "1. Add the tab titles in the Editor mode\r\n2. Switch the block to Preview mode\r\n3. Choose the blocks to be displayed for each tab. \r\n(The order of the blocks added in Preview determines which tab they relate to. Reorder as necessary)",
+            "new_lines": "br",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/tabs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1673995630
+}

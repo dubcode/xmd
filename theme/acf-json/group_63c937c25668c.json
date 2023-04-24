@@ -1,0 +1,118 @@
+{
+    "key": "group_63c937c25668c",
+    "title": "Block : Post List Grid",
+    "fields": [
+        {
+            "key": "field_63c937e2693e8",
+            "label": "Enable Full Screen",
+            "name": "enable_full_screen",
+            "type": "true_false",
+            "instructions": "Set to yes to ignore the max width container",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_63c937c3693e7",
+            "label": "Clone Block Header",
+            "name": "clone_block_header",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_63bc36d9dda3b"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_63c93843693e9",
+            "label": "Block Spacing",
+            "name": "block_spacing",
+            "type": "select",
+            "instructions": "Set the top and bottom spacing for the block",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "top-bottom": "Top & Bottom",
+                "top": "Top",
+                "bottom": "Bottom",
+                "none": "None"
+            },
+            "default_value": "none",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_63c93873693ea",
+            "label": "Post Type",
+            "name": "post_type",
+            "type": "select",
+            "instructions": "Select the post type to use. The block will fetch all posts of that type automatically",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post": "Posts",
+                "page": "Pages",
+                "team": "Team Members"
+            },
+            "default_value": "post",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/post-list-grid"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1674132823
+}

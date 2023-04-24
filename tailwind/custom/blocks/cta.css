@@ -1,0 +1,73 @@
+.custom-call-to-action {
+    @apply flex flex-col min-h-[315px] px-5 items-center justify-center bg-cover bg-no-repeat lg:px-8;
+}
+
+.custom-call-to-action-outer:not(.has-background-image) {
+    @apply bg-gradient-to-t from-primary to-grey-700
+}
+
+.custom-call-to-action .cta-heading {
+    @apply font-medium text-4xl text-white text-center;
+}
+
+.custom-call-to-action .cta-text {
+    @apply text-grey-400 mt-5 text-center;
+}
+
+.custom-call-to-action .cta-button {
+    @apply button-primary button-col-secondary mt-5 md:mt-8;
+}
+
+.two-col-container .custom-call-to-action {
+    @apply min-h-[300px];
+}
+
+.image-cta__blocks div.image-call-to-action {
+    @apply bg-grey-200 p-8 border-white border-4 border-t-0 border-b-8 border-solid;
+}
+
+.three-col-block.image-cta__row-two {
+    @apply mt-0;
+}
+
+a.image-cta-button {
+    @apply button-primary button-col-primary bg-purple rounded-full border-2 border-purple normal-case mx-auto  hover:bg-transparent hover:text-purple;
+}
+
+.three-col__num-blocks .custom-call-to-action {
+    @apply bg-grey-200 p-8 border-white border-4 border-t-0 border-b-0 border-solid;
+}
+
+.three-col__num-blocks .custom-call-to-action .cta-heading {
+    @apply text-grey-700;
+}
+
+.three-col__num-blocks .custom-call-to-action .cta-sub-heading {
+    @apply text-grey-700 text-5xl font-extrabold;
+}
+
+.three-col__num-blocks .custom-call-to-action p {
+    @apply text-grey-700;
+}
+
+.three-col-block.cta-num-blocks {
+    @apply mt-0;
+}
+
+.cta-num-blocks .grid {
+    @apply gap-4;
+}
+
+.cta-num-blocks .custom-call-to-action-outer {
+    @apply bg-none rounded border border-2 border-grey-700;
+}
+
+.cta-num-blocks .custom-call-to-action {
+    @apply bg-transparent rounded p-8 min-h-0;
+}
+
+.cta-num-blocks .custom-call-to-action .cta-heading,
+.cta-num-blocks .custom-call-to-action .cta-text {
+    @apply text-primary;
+}
+

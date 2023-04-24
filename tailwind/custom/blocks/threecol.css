@@ -1,0 +1,110 @@
+.three-col-block {
+    @apply mt-[50px] md:mt-[96px];
+}
+
+.three-col-block.three-col-bg {
+    @apply bg-primary m-0 pt-[50px] md:pt-[96px];
+}
+
+.three-col-block.three-col-bg .grid a {
+    @apply px-2 h-full w-full;
+}
+
+.three-col-block.three-col-bg .grid a .image-call-to-action {
+    @apply bg-white rounded h-full w-full p-4;
+}
+
+.three-col-block.three-col-bg .grid a .image-call-to-action img {
+    @apply rounded h-auto w-full;
+}
+
+.three-col-block.three-col-bg .grid a .heading-5 {
+    @apply mb-5 font-medium text-primary;
+    font-size: 1.75rem;
+}
+
+.three-col-block.three-col-bg .grid a p {
+    @apply mb-5;
+}
+
+.three-col-block.three-col-bg .grid a .image-cta-button {
+    @apply border-2 border-solid border-primary rounded normal-case font-bold text-primary text-base mb-5 py-3 px-9 hover:border-secondary hover:bg-secondary hover:text-white transition-all duration-300;
+    letter-spacing: 1px;
+}
+
+.three-col-block.three-col-no-bg {
+    @apply bg-none bg-white pt-0;
+}
+
+.three-col-block.three-col-no-bg .three-col-container .grid  .image-call-to-action {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.three-col-block.three-col-no-bg .block-header,
+.three-col-block.three-col-grey-bg .block-header {
+    @apply text-primary font-medium text-4xl;
+}
+
+.three-col-block.three-col-no-bg .block-header-container,
+.three-col-block.three-col-grey-bg .block-header-container {
+    @apply pb-0;
+}
+
+body.error404 .three-col-block.three-col-no-bg .block-header-container {
+    @apply pb-[96px];
+}
+
+.three-col-block.three-col-bg.three-col-no-bg .grid a .image-call-to-action {
+    @apply bg-grey-100;
+}
+
+.three-col-block.three-col-bg.three-col-grey-bg .grid a .image-call-to-action {
+    @apply bg-white;
+}
+
+.three-col-block.three-col-grey-bg {
+    @apply bg-none bg-grey-100 pt-0 pb-[96px];
+}
+
+.three-col-block.three-col-contact {
+    @apply mt-0;
+}
+
+.three-col-block.three-col-contact .image-call-to-action {
+    @apply bg-grey-100 rounded;
+    padding: 1rem;
+}
+
+.three-col-block.three-col-contact .grid {
+    gap: 2rem;
+}
+
+.three-col-block.three-col-contact .grid img {
+    @apply w-full h-auto rounded;
+}
+
+.three-col-contact-details {
+    @apply text-center;
+}
+
+.three-col-block.three-col-contact .grid .heading-5 {
+    @apply mb-5 font-medium text-primary;
+    font-size: 1.75rem;
+}
+
+.three-col-block.three-col-contact .grid p {
+    line-height: 2.4;
+}
+
+.three-col-block.three-col-contact .grid p b {
+    @apply font-bold text-2xl;
+}
+
+.three-col-block.three-col-contact .grid p a {
+    text-decoration: underline;
+}
+
+.three-col-block.three-col-contact .grid p a:hover {
+    text-decoration: none;
+}
+

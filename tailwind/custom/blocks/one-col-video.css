@@ -1,0 +1,52 @@
+.one-col-video {
+    @apply object-fill h-[600px];
+}
+
+.one-col-video-container {
+    @apply z-0 flex rounded overflow-hidden items-center justify-center h-auto py-[16rem] relative bg-cover bg-no-repeat;
+}
+
+.one-col-video-container .gradient-overlay {
+    @apply z-10 w-full h-full absolute;
+}
+
+.one-col-video-container .video-info-container {
+    @apply static transform-none
+}
+
+/* Video that is within container */
+.one-col-video-container.is-contained {
+    @apply z-0 flex items-center justify-center h-0 relative py-0 pb-[56.5%] bg-cover bg-no-repeat;
+}
+
+.one-col-video-container.is-contained .video-info-container {
+    @apply top-1/2 transform -translate-y-1/2 absolute
+}
+
+.bg-image-active .one-col-video-container {
+    @apply before:bg-primary before:bg-opacity-70 before:absolute before:top-0 before:w-full before:h-full before:content-['']
+}
+
+.content-video-banner {
+    @apply flex justify-center items-start relative;
+}
+
+.content-video-banner .block-header-container {
+    @apply absolute pt-[6rem] pb-0 w-full z-10;
+}
+
+.content-video-banner .one-col-container {
+    @apply w-full;
+}
+
+.content-video-banner .one-col-video-container .video-info-container {
+    @apply absolute bottom-[6rem];
+}
+
+.content-video-banner .block-header {
+    @apply text-white font-medium text-4xl;
+}
+
+.content-video-banner .written {
+    @apply text-white;
+}

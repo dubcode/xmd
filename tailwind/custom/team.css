@@ -1,0 +1,8 @@
+/* 
+ * Team custom post type specific styles
+ */
+
+/* Hero image */
+.single-team .team-hero {
+    @apply mb-20 pb-0 md:pb-0 lg:!pb-24 lg:mb-0
+}

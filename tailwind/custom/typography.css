@@ -1,0 +1,58 @@
+@layer base {
+    .written p {
+        @apply mb-5 lg:text-lg text-theme-text-body
+    }
+
+    /* Override the global text colour for <p> tags inside the written element */
+    div[class*="text-"].written p {
+        @apply text-inherit
+    }
+
+    .written ul {
+        @apply marker:text-primary list-outside list-none ml-5;
+    }
+
+    .written ol {
+        @apply marker:text-primary list-inside list-decimal
+    }
+
+    .written li {
+        @apply mb-2.5 text-theme-text-body text-inherit;
+    }
+
+    .written ul li {
+        @apply pl-3;
+        list-style-image: url(./assets/img/list-bullet-primary.svg);
+    }
+
+    .written a {
+        @apply text-primary hover:text-primary hover:underline;
+    }
+
+    .bg-primary .written a {
+        @apply text-white hover:text-white hover:underline;
+    }
+
+    .written h2 {
+        @apply heading-2
+    }
+    
+    .written h3 {
+        @apply heading-3
+    }
+
+    .written h4 {
+        @apply heading-4
+    }
+    
+    .written h5 {
+        @apply heading-5
+    }
+
+    .written > h2:first-child,
+    .written > h3:first-child,
+    .written > h4:first-child,
+    .written > h5:first-child {
+        @apply mt-0
+    }
+}

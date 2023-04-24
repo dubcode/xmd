@@ -1,0 +1,46 @@
+.download-call-to-action {
+    @apply flex flex-col min-h-[160px] px-5 py-5 lg:py-10 items-center justify-center bg-white border border-grey-400 border-b-0 last:border-b;
+}
+
+.download-grid .download-call-to-action {
+    @apply md:border md:border-t-0 lg:border lg:border-t-0 lg:border-r-0
+}
+
+.download-grid .download-call-to-action:first-child,
+.download-grid .download-call-to-action:nth-child(2) {
+    @apply md:border-t
+}
+
+.download-grid .download-call-to-action:nth-child(odd) {
+    @apply md:border-r-0
+}
+
+.download-grid .download-call-to-action:nth-child(1),
+.download-grid .download-call-to-action:nth-child(2),
+.download-grid .download-call-to-action:nth-child(3),
+.download-grid .download-call-to-action:nth-child(4) {
+    @apply lg:border-t
+}
+.download-grid .download-call-to-action:nth-child(4n) {
+    @apply lg:border-r
+}
+
+.download-bg {
+    @apply bg-grey-100;
+}
+
+.download-call-to-action .download-cta-image, .download-call-to-action i {
+    @apply w-[30px] h-10 mb-5;
+}
+
+.download-call-to-action .download-cta-heading {
+    @apply heading-5 text-grey-700 text-center;
+}
+
+.download-call-to-action .download-cta-description {
+    @apply text-grey-700 mt-2.5 text-center hidden md:block;
+}
+
+.download-call-to-action .download-cta-button {
+    @apply button-primary button-col-primary bg-purple rounded-full border-2 border-purple normal-case my-4 py-1 hover:bg-transparent hover:text-purple;
+}

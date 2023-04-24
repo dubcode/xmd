@@ -1,0 +1,19 @@
+.one-col-block {
+    /* @apply relative text-center text-white min-h-[600px]; */
+    @apply relative text-center text-white;
+}
+
+.one-col-block .block-header {
+    @apply font-medium text-4xl;
+}
+
+
+.one-col-white-text .block-header,
+.one-col-block.bg-primary .block-header {
+    @apply text-white;
+}
+
+.one-col-white-text .written,
+.one-col-block.bg-primary .written {
+    @apply text-white;
+}

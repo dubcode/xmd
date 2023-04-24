@@ -1,0 +1,15 @@
+.four-col-image-call-to-action-instagram-text {
+    @apply text-base text-grey-700 mr-2.5 w-[158px] text-right;
+}
+
+.four-col-image-call-to-action-instagram-icon {
+    @apply w-5 h-5;
+}
+
+.four-col-image-call-to-action-image {
+    @apply w-full h-full pr-[1px] last:pr-0;
+}
+
+.four-col-image-call-to-action:nth-child(n+3) {
+    @apply hidden lg:block;
+}

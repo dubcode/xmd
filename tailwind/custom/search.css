@@ -1,0 +1,35 @@
+/**
+ * Search specific styles
+ */
+ 
+.search-results .header-hero-banner {
+    @apply min-h-[440px] h-auto
+}
+
+ .emc-search {
+    @apply max-w-[1040px] m-auto px-5;
+}
+
+.search-result-item {
+    @apply border-b border-b-grey-400 py-10;
+}
+
+.emc-search:last-child .search-result-item {
+    @apply border-b-0
+}
+
+.emc-category a.emc-link {
+    @apply  bg-gray-700 text-white px-3 py-2 !important;
+}
+
+.emc-search p {
+    @apply text-gray-700 text-lg leading-7;
+}
+
+.search-result-item header h2 {
+    @apply text-primary mb-4 font-medium text-2xl;
+}
+
+/* .emc-no-result-found {
+    @apply bg-gray-200 mt-20 py-20;
+} */

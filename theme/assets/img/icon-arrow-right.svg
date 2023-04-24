@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A6C0F1D2-FF14-48F3-A9F5-E6783F6B6FE2@2x</title>
+    <g id="------Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Homepage" transform="translate(-1266.000000, -7570.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="8086"></rect>
+            <g id="Blocks/subscribe-form" transform="translate(0.000000, 7510.000000)">
+                <rect id="Background-Colour" fill="#FFFFFF" x="0" y="1" width="1440" height="145"></rect>
+                <g id="Forms/form-input" transform="translate(826.000000, 45.000000)">
+                    <rect id="FIeld" stroke="#E2E8F0" fill="#FFFFFF" x="0.5" y="0.5" width="487" height="57" rx="4"></rect>
+                    <g id="Select" transform="translate(440.000000, 15.000000)" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <g id="Group" transform="translate(0.000000, -0.000000)">
+                            <path d="M16.3333334,5.83333336 L24.5000001,14.0000001 M24.5000001,14.0000001 L16.3333334,22.1666668 M24.5,14.0000001 L3.50000001,14.0000001" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+.emc-thank-you-wrapper {
+    @apply bg-grey-700 relative;
+}
+
+.emc-thank-you-wrapper #breadcrumbs {
+    @apply text-white;
+}
+
+.thank-you-header {
+    @apply pt-[140px] pb-[96px] min-h-[468px] flex flex-col justify-center items-center;
+}
+
+.thank-you-header-content {
+    @apply max-w-[850px] flex flex-col items-center;
+}
+
+.thank-you-heading {
+    @apply text-white heading-1 my-8;
+}
+
+.thank-you-header-link {
+    @apply underline hover:text-grey;
+}
+
+.thank-you-description {
+    @apply mb-8 text-grey-400 text-[21px] text-center;
+}

@@ -1,0 +1,87 @@
+.subscribe-block {
+    @apply relative py-[35px] xl:px-0 min-h-[145px] flex items-center;
+}
+
+.subscribe-block .nf-form-fields-required {
+    @apply hidden;
+}
+
+.subscribe-text-container {
+    @apply w-full min-[800px]:w-auto min-[800px]:pr-10;
+}
+
+.subscribe-form-container {
+    @apply w-full min-[800px]:w-auto min-[800px]:flex-grow;
+}
+
+/* .subscribe-form-container .nf-cell:first-of-type {
+    @apply !w-[84%];
+}
+
+.subscribe-form-container .nf-cell:last-of-type {
+    @apply !w-[16%];
+} */
+
+.subscribe-form-container .nf-error-field-errors {
+    @apply mb-[50px];
+}
+
+.subscribe-form-container .nf-field-label {
+    @apply hidden;
+}
+
+.subscribe-form-container .nf-form-content {
+    @apply !p-0 relative;
+}
+
+.subscribe-form-container .nf-cell {
+    @apply !p-0;
+}
+
+.subscribe-form-container .nf-field-container.email-container,
+.subscribe-form-container .nf-field-container.submit-container {
+    @apply static mb-0
+}
+
+.subscribe-form-container .nf-field-container.submit-container .nf-field-element {
+    @apply static;
+}
+
+.subscribe-title {
+    @apply mt-0 heading-5 mb-5 md:mb-[13px] ;
+}
+
+.subscribe-description {
+    @apply font-normal text-lg mb-[30px] md:mb-0;
+}
+
+.subscribe-container {
+   @apply flex flex-col min-[800px]:flex-row min-[800px]:items-center;
+} 
+
+.email-input {
+    @apply !bg-white;
+}
+
+.subscribe-form .submit-button {
+    @apply absolute top-0 right-0 w-[50px] h-[50px] inline-block !-ml-[50px] !pl-3 min-[800px]:!p-3;
+}
+
+.submit-icon {
+    @apply w-7 h-7 bg-[url('./assets/img/icon-arrow-right.svg')];
+}
+
+.subscribe-form .nf-error.field-wrap .nf-field-element::after {
+    @apply !right-[50px];
+}
+
+@layer base {
+    .bg-transparent + .subscribe-block,
+    .slider-block + .subscribe-block {
+        @apply border-t border-grey-400;
+    }
+    
+    #main > section:first-child.subscribe-block {
+        @apply border-b border-grey-400
+    }
+}

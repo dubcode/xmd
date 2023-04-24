@@ -1,0 +1,29 @@
+.block-header-container {
+    @apply flex flex-col items-center container pt-[50px] md:pt-[96px] pb-10 md:pb-[96px];
+}
+
+.block-header {
+    @apply heading-2 text-grey-700 mb-5 mx-auto max-w-3xl md:mb-8;
+}
+
+.block-text {
+    @apply text-grey-700 w-full md:max-w-md-lg text-center;
+}
+
+.block-button {
+    @apply button-primary button-col-primary mt-8;
+}
+
+.big-excerpt .written p,
+.big-excerpt div.written  {
+    @apply mb-16 xl:text-4xl;
+    color: #4A5568 !important;
+}
+
+.big-excerpt .two-col-column-2 {
+    @apply bg-transparent;
+}
+
+.big-excerpt .two-col-heading {
+    @apply text-grey-700;
+}

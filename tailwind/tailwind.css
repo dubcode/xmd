@@ -1,0 +1,143 @@
+@import "./custom/file-header.css";
+/**
+ * The line above injects the WordPress file header. It needs to be first,
+ * before this comment.
+ */
+
+/**
+ * Inject custom fonts
+ */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/**
+ * This injects custom `@font-face` rules.
+ */
+ @import "./custom/fonts.css";
+
+/**
+ * Let's improt third party scripts before we start our custom styling
+ * This will make it easier to override
+ */
+@import "./custom/slick-slider.css";
+
+ /**
+  * This injects Tailwind's base styles and any base styles registered by
+  * plugins, then adds custom base styles.
+  */
+ @import "tailwindcss/base";
+ @import "./custom/base.css";
+
+/**
+ * This styles text across the site  */
+@import "./custom/typography.css";
+
+ /**
+ * These CSS files add global form styles
+ *
+ * This site primarily uses ninja forms
+ */
+ @import "./custom/forms.css";
+
+
+ /**
+ * This adds the header and footer CSS.
+ */
+ @import "./custom/header.css";
+ @import "./custom/footer.css";
+
+ /**
+ * These CSS files add our Menu styles.
+ *
+ * This needs combining into a single file for simplicity
+ */
+ @import "./custom/mega-menu.css";
+ @import "./custom/mobile-nav.css";
+ @import "./custom/nav-main.css";
+
+
+ /**
+ * These CSS files add our Block styles.
+ */
+ @import "./custom/blocks/banner.css";
+ @import "./custom/blocks/cta.css";
+ @import "./custom/blocks/download-cta.css";
+ @import "./custom/blocks/block-header.css";
+ @import "./custom/blocks/twocol.css";
+ @import "./custom/blocks/onecol.css";
+ @import "./custom/blocks/one-col-form.css";
+ @import "./custom/blocks/one-col-table.css";
+ @import "./custom/blocks/one-col-testimonial-slider.css";
+ @import "./custom/blocks/one-col-video.css";
+ @import "./custom/blocks/one-col-accordion.css";
+ @import "./custom/blocks/threecol.css";
+ @import "./custom/blocks/fourcol.css";
+ @import "./custom/blocks/product-slider.css";
+ @import "./custom/blocks/news-slider.css";
+ @import "./custom/blocks/image-cta.css";
+ @import "./custom/blocks/four-col-image.css";
+ @import "./custom/blocks/tabs.css";
+ @import "./custom/blocks/grid.css";
+ @import "./custom/blocks/subscribe.css";
+ @import "./custom/blocks/accordion.css";
+
+/**
+ * These CSS files add our search page styling
+ */
+ @import "./custom/search.css";
+
+/**
+ * These CSS files add our modal styling
+ */
+ @import "./custom/modal.css";
+
+
+/**
+ * This adds the archive CSS.
+ */
+ @import "./custom/archive.css";
+
+/**
+ * This adds the single post CSS.
+ */
+ @import "./custom/single-post.css";
+
+/**
+ * This adds the single post CSS.
+ */
+ @import "./custom/team.css";
+
+ /**
+ *  WooCommerce Styling
+ */
+ @import "./custom/woocommerce/woocommerce.css";
+ @import "./custom/woocommerce/floating-basket.css";
+ @import "./custom/woocommerce/cart.css";
+ @import "./custom/woocommerce/checkout.css";
+ @import "./custom/woocommerce/thank-you.css";
+
+
+/**
+ * This injects page specific styling into the stylesheet
+ */
+ @import-glob "./custom/pages/**/*.css";
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins, then adds custom component classes.
+ *
+ * The `@import-glob` line imports all CSS files from the `components`
+ * directory (except for `components.css`, which is imported on the following
+ * line). This is meant to simplify the process of integrating styles from
+ * JavaScript components or WordPress plugins.
+ */
+@import "tailwindcss/components";
+@import-glob "./custom/components/**/!(components).css";
+@import "./custom/components/components.css";
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins, then adds custom utility classes.
+ */
+@import "tailwindcss/utilities";
+@import "./custom/utilities.css";
+

@@ -1,0 +1,111 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-background font-sans text-foreground;
+}
+
+/* Styling for the Cookie Popup */
+aside#moove_gdpr_cookie_info_bar.gdpr_lightbox-hidden {
+	display: none;
+}
+
+aside#moove_gdpr_cookie_info_bar,
+.gdpr_lightbox.gdpr_lightbox-opened.gdpr_lightbox-inline.moove_gdpr_cookie_modal_open {
+	bottom: 0 !important;
+	margin: 0;
+	width: 100% !important;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 6px;
+	padding: 0;
+	max-height: 100vh !important;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, .4) !important;
+	border-top: 1px solid #2a363e !important;
+	z-index: 999999999;
+}
+
+.moove-gdpr-info-bar-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px !important;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.moove-gdpr-cookie-notice {
+	text-align: center;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+}
+
+.moove-gdpr-cookie-notice p {
+	color: black !important;
+	margin-bottom: 0.6em;
+}
+
+.moove-gdpr-button-holder {
+	padding: 0 !important;
+	justify-content: center;
+}
+
+/* remove the WPML dev banner */
+.otgs-development-site-front-end {
+	@apply !hidden;
+}
+
+.error404 #content {
+	@apply pb-[96px];
+}
+
+@layer base {
+	.video-info-container {
+        @apply flex flex-col absolute z-20 items-center;
+    }
+
+    .video-header {
+        @apply flex items-center justify-center max-w-md-lg flex-col px-[30px] md:px-0;
+    }
+
+    .video-header .video-play-title {
+        @apply heading-2 mb-8 text-white;
+    }
+
+    .video-header .video-play-description {
+        @apply text-grey-400 w-full mb-8 text-center;
+    }
+
+    .video-play-container {
+        @apply flex items-center justify-center w-[184px] h-[94px] flex-col;
+    }
+    
+    .video-play-icon {
+        @apply text-white w-[60px] h-[60px] cursor-pointer;
+    }
+    
+    .video-play-text {
+        @apply text-grey-400 text-base w-full text-center mt-3 cursor-pointer;
+    }
+
+}

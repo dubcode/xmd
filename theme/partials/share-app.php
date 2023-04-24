@@ -1,0 +1,9 @@
+<strong class="pointer-events-none uppercase text-primary text-base mb-3 font-normal text-center"><?= __('Share', 'extramile') ?></strong>
+<div id="share-options" class="rounded-lg">
+    <ul class="list-none p-0 lg:flex-col flex items-center w-full my-0">
+        <li class="my-0 p-2 leading-none"><a class="text-[#3B5998] text-2xl transition-transform transform group hover:scale-110 lg:text-base leading-none" href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode(  get_permalink() ) ?>" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i> <span class="sr-only"><?= __('Share on Facebook', 'lf') ?></span></a></li>
+        <li class="my-0 p-2 leading-none"><a class="text-[#1DA1F2] text-2xl transition-transform transform group hover:scale-110 lg:text-base leading-none" href="https://twitter.com/intent/tweet?text=<?= urlencode(  get_permalink() ) ?>" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i> <span class="sr-only"><?= __('Share on Twitter', 'lf') ?></span></a></li>
+        <li class="my-0 p-2 leading-none"><a class="text-[#0A66C2] text-2xl transition-transform transform group hover:scale-110 lg:text-base leading-none" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= urlencode( get_permalink() ) ?>&title=<?= urlencode( get_the_title()) ?>&summary=&source=<?= urlencode(  get_permalink() ) ?>" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i> <span class="sr-only"><?= __('Share on LinkedIn', 'lf') ?></span></a></li>
+        <li class="my-0 p-2 leading-none"><a class="text-[#25D366] text-2xl transition-transform transform group hover:scale-110 lg:text-base leading-none" href="https://wa.me?text=<?= urlencode( __('This might be of interest to you: ', 'lf') . get_permalink() ) ?>" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> <span class="sr-only"><?= __('Share on Twitter', 'lf') ?></span></a></li>
+    </ul>
+</div>

@@ -1,0 +1,90 @@
+/* .emc-tabs {
+    @apply nav-tabs nav-justified flex flex-row list-none border-b-0 pl-0 col-span-4 overflow-auto;
+}
+
+.emc-tab-item {
+    @apply nav-item flex flex-grow text-center h-[100px] w-[223px] md:w-full border border-grey-400 items-center;
+}
+
+.emc-tab-item a{
+    @apply heading-6;
+}
+
+.emc-tab-link {
+    @apply nav-link w-full font-medium text-xs leading-tight capitalize border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent flex justify-center items-center h-full;
+}
+
+.emc-tab-link.active {
+    @apply bg-grey-400;
+}
+
+.emc-tab-content {
+    @apply col-span-4;
+} */
+
+.entry-content>.tabs {
+    @apply max-w-[1200px] mx-auto;
+}
+
+ul#tabs-nav {
+    @apply p-0 m-0 overflow-x-scroll flex flex-nowrap lg:flex-wrap;
+    list-style: none;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; 
+}
+
+ul#tabs-nav::-webkit-scrollbar {
+    display: none;
+}   
+
+ul#tabs-nav li {
+    @apply bg-transparent border border-grey-400 text-grey-700;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) { 
+    ul#tabs-nav {
+        overflow: hidden;
+    }
+    ul#tabs-nav li {
+        flex-basis: 25%; /* sets a fixed width of 33.33% minus 20px of padding */
+    }
+}
+
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+    @apply bg-primary border border-grey-400 text-white;
+}
+
+#tabs-nav li a {
+    @apply no-underline;
+}
+
+.tab-content {
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+
+.tabs .block-header {
+    @apply mb-0 text-grey-700;
+}
+
+ul#tabs-nav::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+ul#tabs-nav::-webkit-scrollbar-track {
+background-color: #fff; /* Set the background color of the track */
+}
+
+ul#tabs-nav::-webkit-scrollbar-thumb {
+background-color: #041556; /* Set the background color of the scrollbar thumb */
+border-radius: 4px; /* Set the border radius of the scrollbar thumb */
+}
+
+ul#tabs-nav::-webkit-scrollbar-thumb:hover {
+background-color: #37a4ee; /* Set the background color of the scrollbar thumb on hover */
+cursor: pointer;
+}
+  

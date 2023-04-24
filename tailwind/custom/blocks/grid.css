@@ -1,0 +1,133 @@
+/* .flexible-grid-container {
+    @apply pb-20;
+}*/
+
+.flexible-grid-item {
+    @apply gradient-overlay flex flex-col justify-center items-center h-full;
+}
+
+.white-services .flexible-grid-item {
+    background: none;
+}
+
+.flexible-grid-item-bg .flexible-grid-item {
+    @apply bg-transparent;
+}
+
+.flexible-grid-1 {
+    @apply grid-cols-1;
+}
+
+.flexible-grid-2 {
+    @apply grid-cols-1 md:grid-cols-2;
+}
+
+.flexible-grid-3 {
+    @apply grid-cols-1 md:grid-cols-3;
+}
+
+.flexible-grid-4 {
+    @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+}
+
+.flexible-grid-inner {
+    @apply grid grid-cols-1 md:grid-cols-2;
+}
+
+.flexible-grid-small {
+    @apply md:col-span-1 min-h-[375px] md:min-h-[360px];
+}
+
+.flexible-grid-large {
+    @apply md:col-span-2 min-h-[375px] md:min-h-[720px];
+}
+
+.white-services .flexible-grid-large {
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+}
+
+.flexible-grid-item-header {
+    @apply heading-3 text-white;
+}
+
+.heading-small {
+    @apply pb-8;
+}
+
+.heading-large {
+    @apply pb-5;
+}
+
+.flexible-grid-item-text {
+    @apply pb-8 text-grey-400 max-w-[479px] text-center hidden md:block;
+}
+
+.flexible-grid-item-button {
+    @apply button-primary button-col-secondary rounded-full bg-transparent border-2 border-white text-white normal-case hover:border-purple hover:bg-purple hover:text-white;
+}
+
+.standard-grid-3 {
+    @apply grid-cols-1 md:gap-3 lg:grid-cols-3
+}
+
+.standard-grid-3 .standard-grid-inner {
+    @apply md:grid md:grid-cols-2 md:gap-3 lg:grid-cols-1
+}
+/* AT - don't like this at all but it's a quick fix. This block needs rebuilding IMO */
+.standard-grid-3 .standard-grid-inner:nth-child(2) .standard-grid-item {
+    @apply col-span-full
+}
+
+.standard-grid-item {
+    @apply flex flex-col rounded border-2 border-grey-300 overflow-hidden justify-center items-center p-10 mb-3 bg-grey-100 md:mb-0;
+}
+
+.standard-grid-small {
+    @apply min-h-[260px] md:min-h-[314px];
+}
+
+.standard-grid-large {
+    @apply min-h-[260px] lg:min-h-[640px];
+}
+
+.standard-grid-item-image, .standard-grid-item-icon i {
+    @apply w-[70px] h-[70px] mb-5;
+}
+
+.standard-grid-item-header {
+    @apply text-2xl text-primary font-bold mb-5;
+}
+
+.standard-grid-item-text {
+    @apply text-grey-700 text-lg text-center;
+}
+
+.stats-grid .flexible-grid-3 .flexible-grid-inner .flexible-grid-item {
+    background: none;
+    @apply px-8;
+}
+
+.stats-grid .flexible-grid-3 .flexible-grid-inner:first-child .flexible-grid-item {
+    @apply bg-primary;
+}
+
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(2) .flexible-grid-item-outer:nth-child(1),
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(3) .flexible-grid-item-outer:nth-child(2) {
+    @apply bg-secondary;
+}
+
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(2) .flexible-grid-item-outer:nth-child(2),
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(3) .flexible-grid-item-outer:nth-child(1) {
+    @apply bg-grey-300;
+}
+
+.stats-grid .flexible-grid-3 .flexible-grid-inner .flexible-grid-item-header {
+    @apply text-2xl font-bold mb-5;
+}
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(2) .flexible-grid-item-header,
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(3) .flexible-grid-item-header,
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(2) .flexible-grid-item-text,
+.stats-grid .flexible-grid-3 .flexible-grid-inner:nth-child(3) .flexible-grid-item-text {
+    @apply text-primary;
+}

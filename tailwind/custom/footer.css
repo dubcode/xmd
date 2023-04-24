@@ -1,0 +1,95 @@
+.emc-footer {
+    @apply bg-secondary text-grey-400;
+}
+
+.top-footer .accordion-item {
+    @apply bg-secondary;
+}
+
+.top-footer .accordion-button {
+    @apply text-white;
+}
+
+.top-footer .accordion-item {
+    background: none;
+}
+
+.top-footer .accordion-item img {
+    display: none;
+}
+
+.top-footer .accordion-button:not(.collapsed) {
+    @apply !text-white !bg-primary;
+}
+
+.emc-footer .accordion-header .accordion-button::after {
+    @apply bg-[url('../theme/assets/img/chevron-down.svg')];
+}
+
+.emc-footer .accordion-header .accordion-button:not(.collapsed)::after {
+    @apply bg-[url('../theme/assets/img/chevron-down.svg')];
+}
+
+.top-footer .accordion-body {
+    @apply text-white;
+}
+
+.emc-footer-left {
+    @apply grid lg:grid-cols-2 gap-0; 
+}
+
+.registered-address {
+    @apply text-base md:text-lg mb-3 w-full md:w-[393px] text-grey-400;
+}
+
+.phone-number, .email-address {
+    @apply flex text-base md:text-lg text-grey-400 items-center;
+}
+
+.phone-number {
+    @apply mb-2.5;
+}
+
+.email-address {
+    @apply mb-8 md:mb-[30px];
+}
+
+.footer-icon {
+    @apply w-[18px] h-[18px] mr-2.5 text-white;
+}
+
+.social-icons {
+    @apply mb-12 md:mb-[60px];
+}
+
+.social-icons .social-links {
+    @apply h-auto flex;
+}
+
+.social-icons .social-links .social-icon:last-child {
+    @apply border-r-0 pr-0;
+}
+
+.footer-right-menu {
+    @apply hidden lg:block;
+}
+
+.footer-menu-title {
+    @apply text-xl font-bold mb-5 text-white;
+}
+
+.footer-menu-item {
+    @apply mb-3 text-base md:text-lg text-grey-400;
+}
+
+.bottom-footer {
+    @apply h-[110px] md:h-[65px] container grid lg:grid-cols-2 items-center text-grey-400;
+}
+
+.pipe {
+    @apply pl-[48px] pr-[48px];
+}
+
+.sitemap-link {
+    @apply lg:float-right;
+}

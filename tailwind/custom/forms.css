@@ -1,0 +1,141 @@
+/**
+ * Form specific styles
+ */
+
+ .nf-form-cont {
+    @apply text-left
+}
+
+.nf-form-cont,
+.nf-form-cont .nf-form-content {
+    @apply p-0 max-w-2xl mx-auto;
+}
+
+.nf-form-fields-required {
+    @apply mb-5 text-grey
+}
+
+/* .nf-form-content .nf-field-container.label-above */
+
+.nf-form-content .nf-field-container.label-above .nf-field-label {
+    @apply mb-2
+}
+
+.nf-form-content .nf-field-label label {
+    @apply text-base text-grey inline-block leading-snug font-normal;
+}
+
+.nf-form-content .nf-field-label label a {
+    @apply text-primary hover:underline
+}
+
+.nf-field-container .nf-field-element input:not([type="button"]),
+.nf-field-container .nf-field-element textarea,
+.nf-field-container .field-wrap.list-select-wrap > .nf-field-element select {
+    @apply bg-white border border-solid border-primary rounded text-grey;
+}
+
+.nf-field-container .nf-field-element input:not([type="button"]):focus,
+.nf-field-container .nf-field-element textarea:focus {
+    @apply text-primary
+}
+
+.nf-field-container .field-wrap.list-select-wrap > .nf-field-element select {
+    @apply bg-transparent
+}
+
+.nf-field-container .list-select-wrap > .nf-field-element {
+    @apply overflow-hidden rounded;
+}
+
+.nf-field-container.label-right .nf-after-field {
+    @apply w-full;
+}
+
+.nf-field-container.label-right .nf-after-field .nf-error-msg {
+    @apply mr-0 text-center;
+}
+
+.nf-field-container.checkbox-container.label-right label:before {
+    @apply text-xs leading-[18px] -left-6 text-primary
+}
+
+.nf-field-container .checkbox-wrap .nf-field-element label.nf-checked-label:before,
+.nf-field-container .checkbox-wrap .nf-field-label label.nf-checked-label:before,
+.nf-field-container .listcheckbox-wrap .nf-field-element label.nf-checked-label:before,
+.nf-field-container .listcheckbox-wrap .nf-field-label label.nf-checked-label:before {
+    @apply text-primary
+}
+
+.nf-field-container .field-wrap.list-select-wrap > .nf-field-element > div {
+    @apply bg-white;
+}
+
+.nf-field-container .field-wrap.list-select-wrap > .nf-field-element > div::after {
+    @apply bg-[url('./assets/img/chevron-down-grey.svg')] content-[''] w-[18px] bg-no-repeat bg-contain bg-center;
+}
+
+.nf-field-container .html-wrap .nf-field-element {
+    @apply text-center text-grey
+}
+
+
+/* submit button */
+.one-col-block .nf-field-container.submit-container .nf-field-element {
+    @apply flex justify-center
+}
+
+.one-col-block .nf-field-container.submit-container .submit-button .btn-content {
+    @apply button-primary button-col-primary;
+}
+
+/* after form */
+.nf-after-form-content .nf-error-msg {
+    @apply text-center
+}
+
+
+/* Custom select styles */
+.custom-select select {
+    @apply appearance-none bg-transparent border-0 p-0 pr-4 m-0 w-full outline-none;
+}
+
+.custom-select {
+    @apply relative w-auto min-w-[188px] max-w-xs border border-primary rounded bg-white text-grey py-[9px] lg:py-4 px-5 text-base leading-snug hover:bg-grey-100;
+}
+
+.custom-select::before {
+    @apply absolute right-5 top-1/2 bg-[url('./assets/img/chevron-down-grey.svg')] content-[''] w-[18px] h-2.5 bg-no-repeat bg-contain bg-center transform -translate-y-1/2;
+}
+
+.page-id-968 .nf-form-cont {
+    @apply bg-primary pt-0 pb-24 max-w-none;
+}
+
+.page-id-968 .nf-form-cont .nf-form-wrap {
+    @apply max-w-[42rem] mx-auto;
+}
+
+.page-id-968 .nf-field-label label,
+.page-id-968 .nf-form-fields-required,
+.page-id-968 #nf-field-21-wrap .nf-field-element {
+    @apply text-white;
+}
+
+.page-id-968 .ninja-forms-field.submit-button {
+    @apply bg-none border-none flex w-full;
+}
+
+.page-id-968 .submit-button .submit-icon {
+    display: none;
+}
+
+.page-id-968 .one-col-block .nf-field-container.submit-container .submit-button .btn-content {
+    @apply mx-auto border-2 border-solid border-white rounded normal-case font-bold text-white text-base mb-5 py-3 px-9 hover:border-secondary hover:bg-secondary hover:text-white transition-all duration-300;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.1)
+}
+
+.page-id-968  .nf-form-title {
+    @apply hidden;
+}

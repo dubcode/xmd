@@ -1,0 +1,92 @@
+.mega-menu {
+    @apply bg-primary w-full hidden left-0 absolute text-left float-left;
+    border-top: 1px solid rgba(225, 225, 225, 0.4);
+}
+
+.mega-menu.style-one,
+.mega-menu.style-two,
+.mega-menu.style-three {
+    @apply py-[50px];
+}
+
+.singlecolumn .mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 236px;
+    float: left;
+}
+
+@media screen and (max-width: 900px) {
+    .hoverable {
+        @apply text-grey relative;
+    }
+    .mega-menu {
+        position: relative;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.hoverable {
+    position: static;
+    transition: all 0.3s ease-in-out;
+}
+
+.hoverable.singlecolumn {
+    position: relative;
+}
+
+@media only screen and (min-width: 900px) {
+    .hoverable.carrot > a::after {
+        flex-shrink: 0;
+        width: 11px;
+        height: 6px;
+        margin-left: 8px;
+        content: "";
+        background-image: url('./assets/img/chevron-down.svg');        
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .hoverable.carrot a:hover::after {
+        rotate: 180deg;
+    }
+
+    .hoverable.carrot a.active::after {
+        rotate: 180deg;
+    }
+
+    .hoverable:hover .mega-menu {
+        display: block;
+    }
+}
+
+.style-one-bg {
+    @apply bg-cover bg-center bg-no-repeat h-[300px];
+}
+
+@media only screen and (max-width: 900px) {
+    .has-children-open {
+        width: 40px;
+        height: 40px;
+        z-index: 200;
+        position: absolute;
+        top: 17px;
+        right: -10px;
+    }
+
+    .hoverable.carrot.active a::after {
+        rotate: 360deg;
+    }
+}
+
+.mega-menu.active {
+    display: block;
+    animation: slideIn 0.5s ease-in-out;
+}

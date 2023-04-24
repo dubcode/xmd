@@ -1,0 +1,50 @@
+/**
+ * Archive page styles
+ */
+
+.archive .header-hero-banner {
+    @apply bg-theme-section-header
+}
+
+.archive #breadcrumbs,
+.archive .banner-heading,
+.archive .subheading {
+    @apply text-white;
+}
+
+.archive #main .container > .post-filter {
+    @apply mt-12 lg:mt-24;
+}
+
+.post-list-grid .featured-news-item {
+    @apply mb-0
+}
+
+/* filter checkboxes */
+
+.post-filter-checkbox-container label {
+    @apply relative border-primary rounded border w-auto  md:min-w-[188px] inline-block h-10 lg:h-14  cursor-pointer hover:bg-primary-light;
+}
+
+.post-filter-checkbox-container label > span {
+    @apply relative z-10 text-grey;
+}   
+
+.post-filter-checkbox-container input[type="checkbox"] {
+    @apply w-full h-full appearance-none m-0 bg-white text-grey rounded text-left before:content-[attr(data-before)] cursor-pointer;
+}
+
+.post-filter-checkbox-container input[type="checkbox"]::before {
+    @apply relative top-0 left-0 z-0 w-full h-full flex items-center px-5 bg-white text-grey rounded overflow-hidden cursor-pointer focus:border-primary-light;
+}
+
+.post-filter-checkbox-container input[type="checkbox"]:checked::before {
+    @apply bg-primary text-white
+}
+
+
+/* orderby dropdown */
+
+.orderby-container {
+    @apply mt-5 flex-wrap md:mt-0
+}

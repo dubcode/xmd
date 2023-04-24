@@ -1,0 +1,43 @@
+.accordion {
+    @apply block lg:hidden pb-12;
+}
+
+.accordion-item {
+    @apply rounded-none;
+}
+
+.accordion-header {
+    @apply mb-0 font-bold text-xl;
+}
+
+.accordion-button {
+    @apply relative flex items-center w-full pb-3 text-xl text-left border-0 rounded-none transition focus:outline-none bg-transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    @apply !shadow-none;
+}
+
+.accordion-header .accordion-button::after {
+    @apply bg-[url('../theme/assets/img/chevron-down-grey.svg')] m-0 ml-auto origin-center w-[18px] h-2.5 bg-contain;
+}
+
+.accordion-header .accordion-button:not(.collapsed)::after {
+    @apply bg-[url('../theme/assets/img/chevron-down-grey.svg')];
+}
+
+.bg-primary .accordion-button::after {
+    @apply bg-[url('../theme/assets/img/chevron-down.svg')];
+}
+
+.accordion-body {
+    @apply px-5;
+}
+
+.collapse {
+    @apply !visible;
+}
+
+.accordion-collapse {
+    @apply border-0 collapse;
+}
